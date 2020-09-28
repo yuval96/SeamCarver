@@ -30,7 +30,7 @@ public class SeamCarver {
 
     // energy of pixel at column x and row y
     public double energy(int x, int y) {
-        if (x == 0 || y == 0) {
+        if (x == 0 || y == 0 || x == pic.width()-1 || y == pic.height()-1) {
             return 1000;
         }
         if (x >= pic.width() || y >= pic.height()) {
@@ -48,7 +48,7 @@ public class SeamCarver {
         int rgbRight = pic.getRGB(x+1, y);
         int rgbLeft = pic.getRGB(x-1, y);
         int r = ((rgbRight >> 16) & 0xFF) - ((rgbLeft >> 16) & 0xFF);
-        int g = ((rgbRight >>  8) & 0xFF) - - ((rgbLeft >> 8) & 0xFF);
+        int g = ((rgbRight >>  8) & 0xFF) -  ((rgbLeft >> 8) & 0xFF);
         int b = (rgbRight & 0xFF) - (rgbLeft & 0xFF);
 
         // return r^2 + g^2 + b^2
@@ -60,7 +60,7 @@ public class SeamCarver {
         int rgbRight = pic.getRGB(x, y+1);
         int rgbLeft = pic.getRGB(x, y-1);
         int r = ((rgbRight >> 16) & 0xFF) - ((rgbLeft >> 16) & 0xFF);
-        int g = ((rgbRight >>  8) & 0xFF) - - ((rgbLeft >> 8) & 0xFF);
+        int g = ((rgbRight >>  8) & 0xFF) -  ((rgbLeft >> 8) & 0xFF);
         int b = (rgbRight & 0xFF) - (rgbLeft & 0xFF);
 
         // return r^2 + g^2 + b^2

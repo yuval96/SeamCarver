@@ -31,7 +31,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PrintEnergy">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -53,11 +53,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrintEnergy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="PrintEnergy" />
+      <module name="SeamCarver" />
+      <option name="PROGRAM_PARAMETERS" value="3x4.png" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -77,6 +81,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="369" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1601300183247" />
+    <state width="1259" height="215" key="GridCell.Tab.0.bottom" timestamp="1601303984365">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601303984365" />
+    <state width="1259" height="215" key="GridCell.Tab.0.center" timestamp="1601303984364">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601303984364" />
+    <state width="1259" height="215" key="GridCell.Tab.0.left" timestamp="1601303984364">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601303984364" />
+    <state width="1259" height="215" key="GridCell.Tab.0.right" timestamp="1601303984364">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601303984364" />
+    <state width="1259" height="215" key="GridCell.Tab.1.bottom" timestamp="1601303935190">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601303935190" />
+    <state width="1259" height="215" key="GridCell.Tab.1.center" timestamp="1601303935189">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601303935189" />
+    <state width="1259" height="215" key="GridCell.Tab.1.left" timestamp="1601303935189">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601303935189" />
+    <state width="1259" height="215" key="GridCell.Tab.1.right" timestamp="1601303935189">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="215" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601303935189" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1601300191408">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
