@@ -31,7 +31,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.PrintEnergy">
+  <component name="RunManager" selected="Application.PrintSeams">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -59,6 +59,12 @@
       <option name="PROGRAM_PARAMETERS" value="3x4.png" />
       <method v="2" />
     </configuration>
+    <configuration name="PrintSeams" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="PrintSeams" />
+      <module name="SeamCarver" />
+      <option name="PROGRAM_PARAMETERS" value="6x5.png" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
@@ -77,45 +83,65 @@
     </recent_temporary>
   </component>
   <component name="WindowStateProjectService">
+    <state width="405" height="438" key="DebuggerActiveHint" timestamp="1601385147601">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="405" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1601385147601" />
     <state x="369" y="82" key="FileChooserDialogImpl" timestamp="1601300183247">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="369" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1601300183247" />
-    <state width="1259" height="215" key="GridCell.Tab.0.bottom" timestamp="1601303984365">
+    <state width="1259" height="215" key="GridCell.Tab.0.bottom" timestamp="1601385648020">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601303984365" />
-    <state width="1259" height="215" key="GridCell.Tab.0.center" timestamp="1601303984364">
+    <state width="1259" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601385648020" />
+    <state width="1259" height="215" key="GridCell.Tab.0.center" timestamp="1601385648019">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601303984364" />
-    <state width="1259" height="215" key="GridCell.Tab.0.left" timestamp="1601303984364">
+    <state width="1259" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601385648019" />
+    <state width="1259" height="215" key="GridCell.Tab.0.left" timestamp="1601385648019">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601303984364" />
-    <state width="1259" height="215" key="GridCell.Tab.0.right" timestamp="1601303984364">
+    <state width="1259" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601385648019" />
+    <state width="1259" height="215" key="GridCell.Tab.0.right" timestamp="1601385648020">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601303984364" />
-    <state width="1259" height="215" key="GridCell.Tab.1.bottom" timestamp="1601303935190">
+    <state width="1259" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601385648020" />
+    <state width="1259" height="215" key="GridCell.Tab.1.bottom" timestamp="1601385648677">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601303935190" />
-    <state width="1259" height="215" key="GridCell.Tab.1.center" timestamp="1601303935189">
+    <state width="1259" height="215" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601385648677" />
+    <state width="1259" height="215" key="GridCell.Tab.1.center" timestamp="1601385648676">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601303935189" />
-    <state width="1259" height="215" key="GridCell.Tab.1.left" timestamp="1601303935189">
+    <state width="1259" height="215" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601385648676" />
+    <state width="1259" height="215" key="GridCell.Tab.1.left" timestamp="1601385648676">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601303935189" />
-    <state width="1259" height="215" key="GridCell.Tab.1.right" timestamp="1601303935189">
+    <state width="1259" height="215" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601385648676" />
+    <state width="1259" height="215" key="GridCell.Tab.1.right" timestamp="1601385648677">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="215" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601303935189" />
+    <state width="1259" height="215" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601385648677" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1601300191408">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601300191408" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SeamCarver.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="edgeTo[1][5]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
