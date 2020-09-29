@@ -46,24 +46,9 @@ public class SeamCarver {
 
     // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
-        // transpose and call findVerticalSeam
-        int transposedHeight = pic.width();
-        int transposedWidth = pic.height();
-        Picture transposed = new Picture(transposedWidth, transposedHeight);
-
-        for (int row = 0; row < transposedHeight; row++) {
-            for (int col = 0; col < transposedWidth; col++) {
-                transposed.setRGB(col, row, pic.getRGB(row, col));
-            }
-        }
-
-        Picture temp = pic;
-        pic = transposed;
-        transposed = temp;
-
+        transpose();
         int[] path = findVerticalSeam();
-        pic = temp;
-
+        transpose();
         return path;
     }
 
@@ -123,6 +108,45 @@ public class SeamCarver {
         }
 
         return path;
+    }
+
+    // remove horizontal seam from current picture
+    public void removeHorizontalSeam(int[] seam) {
+        // removing a horizontal seam will result in a picture with same width, height-1 (one less row)
+        Picture newPic = new Picture(pic.width(), pic.height()-1);
+
+        for (int col = 0; col < newPic.width(); col++) {
+            int skip = 0;
+            for (int row = 0; row < newPic.height(); row++) {
+                if (seam[col] == row) {
+                    skip = 1;
+                }
+                newPic.setRGB(col, row, pic.getRGB(col, row+skip));
+            }
+        }
+        pic = newPic;
+    }
+
+    // remove vertical seam from current picture
+    public void removeVerticalSeam(int[] seam) {
+        // transpose and call removeHorizontalSeam
+        transpose();
+        removeHorizontalSeam(seam);
+        transpose();
+    }
+
+    private void transpose() {
+        int transposedHeight = pic.width();
+        int transposedWidth = pic.height();
+        Picture transposed = new Picture(transposedWidth, transposedHeight);
+
+        for (int row = 0; row < transposedHeight; row++) {
+            for (int col = 0; col < transposedWidth; col++) {
+                transposed.setRGB(col, row, pic.getRGB(row, col));
+            }
+        }
+
+        pic = transposed;
     }
 
     private double deltaX(int x, int y) {
