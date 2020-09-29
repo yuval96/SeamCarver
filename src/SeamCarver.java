@@ -2,7 +2,7 @@ import edu.princeton.cs.algs4.Picture;
 
 public class SeamCarver {
 
-    private final Picture pic;
+    private Picture pic;
     static final double BORDER = 1000.0;
 
     // create a seam carver object based on the given picture
@@ -44,11 +44,28 @@ public class SeamCarver {
         return Math.sqrt(dX + dY);
     }
 
-/*    // sequence of indices for horizontal seam
+    // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
         // transpose and call findVerticalSeam
+        int transposedHeight = pic.width();
+        int transposedWidth = pic.height();
+        Picture transposed = new Picture(transposedWidth, transposedHeight);
 
-    }*/
+        for (int row = 0; row < transposedHeight; row++) {
+            for (int col = 0; col < transposedWidth; col++) {
+                transposed.setRGB(col, row, pic.getRGB(row, col));
+            }
+        }
+
+        Picture temp = pic;
+        pic = transposed;
+        transposed = temp;
+
+        int[] path = findVerticalSeam();
+        pic = temp;
+
+        return path;
+    }
 
     // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
